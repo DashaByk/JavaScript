@@ -2,22 +2,7 @@
 let numbers = [100, 200, 300, 400, 500, 600, 650, 700, 800, 900];
 let result = (numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4] + numbers[5] + numbers[6] + numbers[7] + numbers[8] + numbers[9]);
 console.log(result);
-//
-// let numbers = [
-//     Math.floor(Math.random() * 10),
-//     Math.floor(Math.random() * 10),
-//     Math.floor(Math.random() * 10),
-//     Math.round(Math.random() * 10),
-//     Math.floor(Math.random() * 10),
-//     Math.ceil(Math.random() * 10),
-//     Math.floor(Math.random() * 10),
-//     Math.floor(Math.random() * 10),
-//     Math.floor(Math.random() * 10),
-//     Math.floor(Math.random() * 10),
-// ];
 
-// console.log(Math.pow(5, 2))
-// console.log(5**2)
 
 // Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр
 let book1 = {
