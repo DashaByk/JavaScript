@@ -57,7 +57,8 @@ console.log(s);
 let heightC = 10;
 let dC = 4;
 const x = 3.14;
-let v = (heightC * dC * x);
+let r = (dC/2);
+let v = (heightC * r**2 * x);
 console.log(v);
 
 // У прямокутного трикутника дві сторони n (зі значенням 3) та m (зі значенням 4).
