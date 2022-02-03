@@ -1,85 +1,88 @@
 // - Користувач вводить або має два числа.
 //     Потрібно знайти та вивести максимальне число з тих двох .
 //     Також потрібно врахувати коли введені рівні числа.
-// let numb1 = prompt('введите первое число');
-// let numb2 = prompt('введите второе число');
-// if (numb1 > numb2) {
-//     console.log(numb1)
-// }
-//  else if (numb2 > numb1) {
-//      console.log(numb2)
-//  }
-//  else if (numb1 == numb2) {
-//     console.log(NaN)
-// }
+let numb1 = prompt('введите первое число');
+let numb2 = prompt('введите второе число');
+if (numb1 > numb2) {
+    console.log(numb1)
+}
+ else if (numb2 > numb1) {
+     console.log(numb2)
+ }
+ else if (numb1 === numb2) {
+    console.log(NaN)
+}
 //
 // - У першому під'їзді квартири з 1 до 20. У другому з 21 по 48. У третьому з 49 по 90.
 // Користувач вводить номер квартири просто в змінні або через prompt('') .
 //     Програма повинна зазначити, в якому під'їзді знаходиться дана квартира.
-
-// let numbers = prompt('введите номер квартиры');
-// if (numbers >=1 && numbers <= 20) {
-//     console.log('подъезд 1')
-// }
-// else if (numbers >=21 && numbers <= 48) {
-//     console.log('подъезд 2')
-// }
-// else if (numbers >=49 && numbers <= 90) {
-//     console.log('подъезд 3')
-// }
+let numbers = prompt('введите номер квартиры');
+if (numbers >=1 && numbers <= 20) {
+    console.log('подъезд 1')
+}
+else if (numbers >=21 && numbers <= 48) {
+    console.log('подъезд 2')
+}
+else if (numbers >=49 && numbers <= 90) {
+    console.log('подъезд 3')
+}
+//
 // - Ми маємо змінну number в яку користувач задає числове значення,  якщо змінна рівна 10 вивести повідомлення ВІРНО, якщо змінна не рівна 10 - тоді НЕВІРНО
-// let number = prompt('введите число');
-// if (number == 10) {
-//     console.log('ВЕРНО')
-// }
-// else  {
-//     console.log('НЕВЕРНО')
-// }
+let number = prompt('введите число');
+if (number === 10) {
+    console.log('ВЕРНО')
+}
+else  {
+    console.log('НЕВЕРНО')
+}
+//
 //- Ми маємо змінну x в яку користувач задає  значення,  якщо в змінну записане число, вивести 1,
 // якщо в змінну записали стрінгу вивести 2, якщо булеве значення - 3, якщо об'єкт або масив - 3.
 // якщо в змінну записали щось інше, спрацьовує else
-let x = '1'
-if (x = 1) {
+let x = undefined
+
+if (typeof x === "number") {
     console.log('1')
-}
-else if (x = '1') {
+} else if (typeof x === "string") {
     console.log('2')
-}
-else if (x = !1) {
+} else if (typeof x === "boolean") {
     console.log('3')
-}
-else  {
+} else if (typeof x === "object") {
+    console.log('4')
+} else  {
     console.log('else')
 }
+//
 //- Задача-гра "чи ми йдемо сьогодні в OKTEN на навчання?".
 //    Змінна, яка характеризує температуру. Якщо температура від +10 до +22 вивести повідомлення що ми йдемо ВЧИТИСЯ .
 //    Якщо інша темпаретура, тоді виводимо повідомлення що сидимо вдома і вчимося ОНЛАЙН
-// let temp = prompt('Яка сьогодні температура');
-// if (temp >= 10 && temp <=22) {
-//     console.log('йдемо ВЧИТИСЯ')
-// }
-// else  {
-//     console.log('вчимося ОНЛАЙН')
-// }
+let temp = prompt('Яка сьогодні температура');
+if (temp >= 10 && temp <=22) {
+    console.log('йдемо ВЧИТИСЯ')
+}
+else  {
+    console.log('вчимося ОНЛАЙН')
+}
+//
 //- За допомогою switch case - реалізувати гру - вікторину, де ми вводимо число від 1 до 5. І взалежності від введеного
 //    числа нам дається приз. (Авто, Мото, Телефон, і т.д ) і якщо число не підходить тоді  вивести Повідомлення - що число не вірне ... .
-// let nom = '1'
-// switch (nom) {
-//     case '1':
-//         console.log('Avto');
-//         break;
-//     case '2':
-//         console.log('Moto');
-//         break;
-//     case '3':
-//         console.log('Phone');
-//         break;
-//     case '4':
-//         console.log('Iron');
-//         break;
-//     case '5':
-//         console.log('Headphones');
-//         break;
-//     default :
-//         console.log('number is wrong');
-// }
+let nom = '1'
+switch (nom) {
+    case '1':
+        console.log('Avto');
+        break;
+    case '2':
+        console.log('Moto');
+        break;
+    case '3':
+        console.log('Phone');
+        break;
+    case '4':
+        console.log('Iron');
+        break;
+    case '5':
+        console.log('Headphones');
+        break;
+    default :
+        console.log('number is wrong');
+}
